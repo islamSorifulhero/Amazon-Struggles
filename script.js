@@ -1,21 +1,17 @@
-// Scroll helper
 function scrollTo(id) {
     document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
 }
 
-// Fade-up observer
 const ob = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('show'); });
 }, { threshold: 0.08 });
 document.querySelectorAll('.fu').forEach(el => ob.observe(el));
 
-// Approach tab switch
 function switchTab(el) {
     document.querySelectorAll('.atab').forEach(t => t.classList.remove('active'));
     el.classList.add('active');
 }
 
-// Calendar
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June',
     'July', 'August', 'September', 'October', 'November', 'December'];
 const DAYS = ['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN'];

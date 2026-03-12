@@ -24,7 +24,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ===== NAVBAR ===== */
+/* NAVBAR */
 nav {
   background: #fff;
   display: flex;
@@ -278,7 +278,7 @@ nav {
   color: var(--yellow);
 }
 
-/* ===== STATS ===== */
+/* STATS */
 .stats-sec {
   background: #fff;
   padding: 50px 60px;
@@ -324,7 +324,7 @@ nav {
   line-height: 1.4;
 }
 
-/* ===== SECTION COMMON ===== */
+/* SECTION COMMON */
 .sec-badge {
   display: inline-flex;
   align-items: center;
@@ -398,14 +398,14 @@ nav {
   transform: translateY(-1px);
 }
 
-/* ===== STORY ===== */
+/* STORY */
 .story-sec {
   background: #fff;
   padding: 70px 60px;
   text-align: center;
 }
 
-/* ===== WHY ===== */
+/* WHY */
 .why-sec {
   background: #111;
   padding: 70px 60px;
@@ -448,10 +448,12 @@ nav {
   align-items: center;
   justify-content: center;
 }
-.white{
+
+.white {
   color: white;
 }
-.black{
+
+.black {
   color: black;
 }
 
@@ -509,27 +511,7 @@ nav {
   gap: 11px;
 }
 
-/* .wpill {
-  background: rgba(255, 255, 255, .06);
-  border: 1px solid rgba(255, 255, 255, .1);
-  border-radius: 9px;
-  padding: 12px 17px;
-  display: flex;
-  align-items: center;
-  gap: 11px;
-  font-size: 0.84rem;
-  color: rgba(255, 255, 255, .82);
-  font-weight: 600;
-  transition: background .2s, transform .2s;
-  cursor: default;
-} */
-
-/* .wpill:hover {
-  background: rgba(245, 166, 35, .12);
-  transform: translateX(4px);
-} */
-
-/* ===== SERVICES ===== */
+/* SERVICES */
 .srv-sec {
   background: #fff;
   padding: 70px 60px;
@@ -615,7 +597,7 @@ nav {
   margin-top: 1px;
 }
 
-/* ===== APPROACH ===== */
+/* APPROACH */
 .app-sec {
   background: #111;
   padding: 60px 5%;
@@ -628,17 +610,17 @@ nav {
 .app-imgs {
   flex: 1;
   min-width: 300px;
-  /* position: relative; */
   display: flex;
   justify-content: center;
 }
 
-.app-imgs img{
+.app-imgs img {
   width: 100%;
   max-width: 500px;
   height: auto;
   border-radius: 16px;
 }
+
 .aimg {
   border-radius: 13px;
   overflow: hidden;
@@ -716,13 +698,11 @@ nav {
   display: flex;
   transition: border-color .2s;
 }
-.active{
+
+.active {
   border-left-color: var(--yellow);
 }
 
-/* .active{
-  border-left-color: var(--yellow);
-} */
 
 .atab-ttl {
   font-size: 0.84rem;
@@ -733,11 +713,6 @@ nav {
   gap: 7px;
 }
 
-/* .atab.active .atab-ttl,
-.atab:hover .atab-ttl {
-  color: #fff;
-} */
-
 .atab-dot {
   width: 16px;
   height: 16px;
@@ -745,11 +720,6 @@ nav {
   align-items: center;
   justify-content: center;
   font-size: 1rem;
-}
-
-.atab.active .atab-dot,
-.atab:hover .atab-dot {
-  /* background: var(--yellow); */
 }
 
 .atab-body {
@@ -760,12 +730,7 @@ nav {
   display: none;
 }
 
-/* .atab.active .atab-body {
-  display: block;
-  color: rgba(255, 255, 255, .62);
-} */
-
-/* ===== REALITY ===== */
+/* REALITY */
 .real-sec {
   background: #fff;
   padding: 70px 60px;
@@ -830,7 +795,7 @@ nav {
   line-height: 1.55;
 }
 
-/* ===== HELP ===== */
+/* HELP */
 .help-sec {
   background: #111;
   padding: 70px 60px;
@@ -890,7 +855,7 @@ nav {
   line-height: 1.6;
 }
 
-/* ===== BOOKING ===== */
+/* BOOKING */
 .book-sec {
   background: #fff;
   padding: 70px 60px;
@@ -1098,6 +1063,7 @@ nav {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .booking-container {
   width: 100%;
   max-width: 1180px;
@@ -1112,7 +1078,7 @@ nav {
   display: block;
 }
 
-/* ===== FOOTER ===== */
+/* FOOTER */
 footer {
   background: #111;
   padding: 48px 60px 26px;
@@ -1209,7 +1175,12 @@ footer {
   color: var(--yellow);
 }
 
-/* ===== RESPONSIVE ===== */
+/* RESPONSIVE */
+@media(max-width:1080px){
+  .hero-float {
+    display: none;
+  }
+}
 @media(max-width:900px) {
 
   nav,
@@ -1225,6 +1196,10 @@ footer {
   footer {
     padding-left: 28px;
     padding-right: 28px;
+  }
+
+  .hero-float {
+    display: none;
   }
 
   .stats-grid {
@@ -1245,7 +1220,8 @@ footer {
     flex-direction: column;
     gap: 28px;
   }
-  .why-right{
+
+  .why-right {
     width: 400px;
   }
 
@@ -1335,7 +1311,8 @@ footer {
     height: 145px;
     left: 110px;
   }
-  .why-sec{
+
+  .why-sec {
     width: auto;
   }
 }
