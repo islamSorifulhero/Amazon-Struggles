@@ -618,7 +618,7 @@ nav {
 /* ===== APPROACH ===== */
 .app-sec {
   background: #111;
-  padding: 70px 60px;
+  padding: 60px 5%;
   display: flex;
   align-items: center;
   gap: 55px;
@@ -627,11 +627,18 @@ nav {
 
 .app-imgs {
   flex: 1;
-  min-width: 220px;
-  position: relative;
-  height: auto;
+  min-width: 300px;
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
 }
 
+.app-imgs img{
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 16px;
+}
 .aimg {
   border-radius: 13px;
   overflow: hidden;
@@ -1090,6 +1097,19 @@ nav {
   color: #999;
   justify-content: center;
   flex-wrap: wrap;
+}
+.booking-container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.responsive-image {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* ===== FOOTER ===== */
