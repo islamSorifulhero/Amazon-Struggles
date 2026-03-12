@@ -1120,7 +1120,7 @@ footer {
 
 .ft-brand p {
   font-size: 0.8rem;
-  color: rgba(255, 255, 255, .42);
+  color: rgba(255, 255, 255, 1);
   line-height: 1.7;
   max-width: 230px;
 }
@@ -1142,7 +1142,7 @@ footer {
 
 .ft-col ul li a {
   font-size: 0.8rem;
-  color: rgba(255, 255, 255, .42);
+  color: rgba(255, 255, 255, 1);
   text-decoration: none;
   transition: color .2s;
 }
@@ -1156,7 +1156,7 @@ footer {
   align-items: center;
   gap: 7px;
   font-size: 0.8rem;
-  color: rgba(255, 255, 255, .42);
+  color: rgba(255, 255, 255, 1);
   margin-bottom: 8px;
 }
 
@@ -1170,7 +1170,7 @@ footer {
 
 .ft-bot p {
   font-size: 0.76rem;
-  color: rgba(255, 255, 255, .28);
+  color: rgba(255, 255, 255, 1);
 }
 
 .ft-links {
@@ -1180,7 +1180,7 @@ footer {
 
 .ft-links a {
   font-size: 0.76rem;
-  color: rgba(255, 255, 255, .28);
+  color: rgba(255, 255, 255, 1);
   text-decoration: none;
   transition: color .2s;
 }
