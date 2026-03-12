@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Oswald", sans-serif;
   color: #111;
   overflow-x: hidden;
 }
@@ -94,9 +94,9 @@ nav {
   transform: translateY(-1px);
 }
 
-/* ===== HERO ===== */
+/* HERO */
 .hero {
-  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 165, 0, 0.1) 100%);
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 165, 0, 0.15) 50%, rgba(255, 165, 0, 0.20) 100%);
   min-height: 450px;
   display: flex;
   align-items: center;
@@ -117,15 +117,12 @@ nav {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  background: #fff;
-  border: 1px solid #eee;
   border-radius: 20px;
   padding: 5px 14px;
   font-size: 0.75rem;
   font-weight: 600;
   color: #555;
   margin-bottom: 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, .07);
 }
 
 .hero-badge .b-num {
@@ -148,7 +145,7 @@ nav {
 }
 
 .hero h1 {
-  font-size: 2.55rem;
+  font-size: 2.4rem;
   font-weight: 900;
   line-height: 1.22;
   color: #111;
@@ -187,13 +184,13 @@ nav {
 
 .hero-float.left {
   left: 40px;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
 }
 
 .hero-float.right {
   right: 40px;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
 }
 
@@ -286,9 +283,9 @@ nav {
 
 .stats-ttl {
   text-align: center;
-  font-size: 0.83rem;
+  font-size: 1rem;
   font-weight: 600;
-  color: #555;
+  color: rgba(21, 21, 21, 1);
   margin-bottom: 30px;
   letter-spacing: .5px;
 }
