@@ -448,6 +448,12 @@ nav {
   align-items: center;
   justify-content: center;
 }
+.white{
+  color: white;
+}
+.black{
+  color: black;
+}
 
 .atom {
   width: 140px;
@@ -533,7 +539,7 @@ nav {
 .srv-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 0;
+  gap: 14px;
   max-width: 820px;
   margin: 36px auto 0;
   text-align: left;
@@ -541,15 +547,17 @@ nav {
 
 .srv-card {
   padding: 18px 0 22px;
+  border-radius: 14px;
 }
 
 .srv-card:nth-child(odd) {
-  border-right: 1px solid #eee;
-  padding-right: 32px;
+  border: 1px solid #eee;
+  padding: 22px;
 }
 
 .srv-card:nth-child(even) {
-  padding-left: 32px;
+  padding: 22px;
+  border: 1px solid #eee;
 }
 
 .srv-card:nth-child(1),
