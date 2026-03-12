@@ -79,9 +79,11 @@ nav {
 .btn-nav {
   background: var(--yellow);
   color: #fff;
-  border: none;
+  border-width: 0px 3px 3px 0px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 1);
   border-radius: 25px;
-  padding: 10px 20px;
+  padding: 12px 20px;
   font-size: 0.82rem;
   font-weight: 700;
   cursor: pointer;
@@ -160,7 +162,9 @@ nav {
   margin-top: 24px;
   background: var(--yellow);
   color: #fff;
-  border: none;
+  border-width: 0px 3px 3px 0px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 1);
   border-radius: 25px;
   padding: 13px 30px;
   font-size: 0.87rem;
@@ -293,19 +297,18 @@ nav {
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  max-width: 880px;
+  max-width: 1180px;
   margin: 0 auto;
+  gap: 24px;
 }
 
 .sbox {
   text-align: center;
   padding: 18px;
-  border-right: 1px solid #eee;
+  border: 1px solid #eee;
+  border-radius: 16px;
 }
 
-.sbox:last-child {
-  border-right: none;
-}
 
 .snum {
   font-size: 1.95rem;
@@ -367,7 +370,7 @@ nav {
 }
 
 .sec-sub {
-  font-size: 0.88rem;
+  font-size: 0.92rem;
   color: #666;
   line-height: 1.7;
   max-width: 500px;
@@ -378,7 +381,9 @@ nav {
   display: inline-block;
   background: var(--yellow);
   color: #fff;
-  border: none;
+  border-width: 0px 3px 3px 0px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 1);
   border-radius: 25px;
   padding: 12px 26px;
   font-size: 0.85rem;
@@ -492,13 +497,13 @@ nav {
 
 .why-right {
   flex: 1;
-  min-width: 200px;
+  min-width: 120px;
   display: flex;
   flex-direction: column;
   gap: 11px;
 }
 
-.wpill {
+/* .wpill {
   background: rgba(255, 255, 255, .06);
   border: 1px solid rgba(255, 255, 255, .1);
   border-radius: 9px;
@@ -511,12 +516,12 @@ nav {
   font-weight: 600;
   transition: background .2s, transform .2s;
   cursor: default;
-}
+} */
 
-.wpill:hover {
+/* .wpill:hover {
   background: rgba(245, 166, 35, .12);
   transform: translateX(4px);
-}
+} */
 
 /* ===== SERVICES ===== */
 .srv-sec {
@@ -1210,6 +1215,9 @@ footer {
     flex-direction: column;
     gap: 28px;
   }
+  .why-right{
+    width: 400px;
+  }
 
   .why-center {
     order: -1;
@@ -1296,6 +1304,9 @@ footer {
     width: 145px;
     height: 145px;
     left: 110px;
+  }
+  .why-sec{
+    width: auto;
   }
 }
 
