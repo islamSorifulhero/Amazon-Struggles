@@ -627,9 +627,9 @@ nav {
 
 .app-imgs {
   flex: 1;
-  min-width: 280px;
+  min-width: 220px;
   position: relative;
-  height: 300px;
+  height: auto;
 }
 
 .aimg {
@@ -702,16 +702,20 @@ nav {
 
 .atab {
   border-left: 3px solid rgba(255, 255, 255, .1);
+  border-bottom: 3px solid rgba(255, 255, 255, .1);
   padding: 9px 17px;
-  margin-bottom: 3px;
+  margin-top: 20px;
   cursor: pointer;
+  display: flex;
   transition: border-color .2s;
 }
-
-.atab.active,
-.atab:hover {
+.active{
   border-left-color: var(--yellow);
 }
+
+/* .active{
+  border-left-color: var(--yellow);
+} */
 
 .atab-ttl {
   font-size: 0.84rem;
@@ -722,25 +726,23 @@ nav {
   gap: 7px;
 }
 
-.atab.active .atab-ttl,
+/* .atab.active .atab-ttl,
 .atab:hover .atab-ttl {
   color: #fff;
-}
+} */
 
 .atab-dot {
   width: 16px;
   height: 16px;
-  background: rgba(255, 255, 255, .1);
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.52rem;
+  font-size: 1rem;
 }
 
 .atab.active .atab-dot,
 .atab:hover .atab-dot {
-  background: var(--yellow);
+  /* background: var(--yellow); */
 }
 
 .atab-body {
@@ -751,10 +753,10 @@ nav {
   display: none;
 }
 
-.atab.active .atab-body {
+/* .atab.active .atab-body {
   display: block;
   color: rgba(255, 255, 255, .62);
-}
+} */
 
 /* ===== REALITY ===== */
 .real-sec {
@@ -808,11 +810,11 @@ nav {
 }
 
 .rc-bar {
-  height: 3px;
+  height: 28px;
   background: var(--yellow);
   border-radius: 2px;
   margin-bottom: 9px;
-  width: 28px;
+  width: 2px;
 }
 
 .rc-p {
